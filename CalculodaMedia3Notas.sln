@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculodaMedia3Notas", "CalculodaMedia3Notas\CalculodaMedia3Notas.csproj", "{30ACB9D9-36A1-4687-B43D-6E9A1C6E70AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30ACB9D9-36A1-4687-B43D-6E9A1C6E70AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30ACB9D9-36A1-4687-B43D-6E9A1C6E70AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30ACB9D9-36A1-4687-B43D-6E9A1C6E70AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30ACB9D9-36A1-4687-B43D-6E9A1C6E70AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E513F564-C4F6-4E3B-A26E-14C579120073}
+	EndGlobalSection
+EndGlobal
