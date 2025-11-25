@@ -1,49 +1,25 @@
-﻿// Programa para leitura de 3 notas de alunos
+﻿// See https://aka.ms/new-console-template for more information
+/* Faça um programa que leia a largura e a altura de uma parece, calcule e mostre a área a ser pintada 
+ * e a quantidade de tinta necessária sabendo que um litro pinta 0.5 m2. */
 
-using System.Net.Security;
+using System;
+using System.Globalization;
 
-Console.WriteLine("Digite o nome do Aluno:");
-
-var Nome = Console.ReadLine();
-
-// Cumprimentando pelo nome
-
-Console.Write("Olá, ");
-Console.WriteLine(Nome);
-
-//Digitando, lendo e atribuindo à nota1
-
-Console.WriteLine("Digite a primeira nota: ");
-var Nota1 = Console.ReadLine();
-
-//Digitando, lendo e atribuindo à nota2
-
-Console.WriteLine("Digite a segunda nota: ");
-var Nota2 = Console.ReadLine();
-
-//Digitando, lendo e atribuindo à nota3
-
-Console.WriteLine("Digite a terceira nota: ");
-var Nota3 = Console.ReadLine();
-
-var Nota1Num = Convert.ToDouble(Nota1);
-var Nota2Num = Convert.ToDouble(Nota2);
-var Nota3Num = Convert.ToDouble(Nota3);
-
-var Soma = Nota1Num + Nota2Num + Nota3Num; // Somando as 3 Notas
-
-var Media = Soma / 3;  // Cálculo da média
-
-//Escrevendo a média
-
-Console.WriteLine(Nome, "A sua média foi: ");
-Console.WriteLine(Media);
-
-if (Media >= 7)
+class Questao01Lista2
 {
-    Console.WriteLine("O Aluno foi aprovado!");
+    static void Main()    
+    {
+        Console.WriteLine("Digite a largura da parede");
+        Decimal largura = Convert.ToDecimal(Console.ReadLine());
+        Console.WriteLine("Digite a altura da parede");
+        Decimal altura = Convert.ToDecimal(Console.ReadLine());
+        Decimal Area = largura * altura;
+        Decimal QtdeTinta = Area / 0.5m; // CORREÇÃO FEITA PELO COPILOT. Estava 0.5 antes, dando erro.
+        /* DICA DO COPILOT  - Literal decimal: quando você divide por 0.5, 
+         * o compilador interpreta como double. Para evitar conversões implícitas, use 0.5m.
+            */
+        Console.WriteLine("A area da parede é de " + Area.ToString("F2") + " metros quadrados");
+        Console.WriteLine("Serão necessários " + QtdeTinta.ToString("F2") + " litros de tinta para pintar toda a parede");
+    }
 }
-else
-{
-    Console.WriteLine("O Aluno foi reprovado!");
-}
+
