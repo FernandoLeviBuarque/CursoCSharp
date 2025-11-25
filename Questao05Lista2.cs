@@ -9,15 +9,15 @@ using System;
     // Informe a distância em Km a ser percorrida pelo passageiro
     Console.WriteLine("Favor Informar a distância em Km a ser percorrida pelo passageiro: ");
     Decimal Distancia = Convert.ToDecimal(Console.ReadLine()); // Faz a leitura da distancia já com 2 casas decimais.
-    Decimal TaxaFixa = Convert.ToDecimal(5,65);
+    Decimal TaxaFixa = Convert.ToDecimal(5.65m);
 
 if (Distancia <= 200)
 {   // Calculo para viagens até 200km.
-    Decimal Preco = Convert.ToDecimal((Distancia * 0,50)) + TaxaFixa;
+    Decimal Preco = Convert.ToDecimal((Distancia * 0.50m)) + TaxaFixa;
     Console.WriteLine("O Preco da Viagem é de: " + Convert.ToString(Preco));
 }
 else
 {   // Calculo para viagens mais longas.
-    Decimal Preco = (Distancia * 0,45) + TaxaFixa;
+    Decimal Preco = (Distancia * 0.45m) + TaxaFixa;
     Console.WriteLine("O Preco da Viagem é de: " + Convert.ToString(Preco));
 }
